@@ -5,14 +5,14 @@ import Bankist from "../../img/bankistApp.png";
 import Citas from "../../img/citas-react.png";
 import PIUGRS from "../../img/piugrs.png";
 
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 
 const Projectos = () => {
   return (
     <main className="proyectos" id="proyectos">
       <h1 className="heading">Proyectos</h1>
 
-      <Fade duration={2000} distance="200px" delay={500} left>
+      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
         <div className="proyecto__card">
           <a href="#proyectos" className="proyecto__progress">
             <img src={PIUGRS} alt="piugrs img" className="blur" />
@@ -53,9 +53,9 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      </Fade>
+      {/* </Fade> */}
 
-      <Fade duration={2000} distance="200px" delay={500} left>
+      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
         <div className="proyecto__card">
           <a href="https://citasreact-vite.netlify.app/">
             <img src={Citas} alt="citas-react img" />
@@ -88,8 +88,8 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      </Fade>
-      <Fade duration={2000} distance="200px" delay={500} left>
+      {/* </Fade> */}
+      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
         <div className="proyecto__card">
           <a href="https://pixabayapigenerator.netlify.app/">
             <img src={Pixabay} alt="pixabay app img" />
@@ -120,8 +120,8 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      </Fade>
-      <Fade duration={2000} distance="200px" delay={500} left>
+      {/* </Fade> */}
+      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
         <div className="proyecto__card">
           <a href="https://maptyapi.netlify.app/">
             <img src={Mapty} alt="mapty app" />
@@ -155,8 +155,8 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      </Fade>
-      <Fade duration={2000} distance="200px" delay={500} left>
+      {/* </Fade> */}
+      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
         <div className="proyecto__card">
           <a href="https://bankistappl.netlify.app/">
             <img src={Bankist} alt="bankist app img" />
@@ -189,7 +189,7 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      </Fade>
+      {/* </Fade> */}
     </main>
   );
 };

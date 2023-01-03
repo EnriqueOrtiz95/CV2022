@@ -2,7 +2,7 @@ import WaveRev from "../../img/wave-pink_rev.svg";
 import Wave from "../../img/wave-pink.svg";
 import { AiOutlineCheck } from "react-icons/ai";
 import { softSkills } from "./data_skills";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import {
   FaHeadSideCough,
@@ -110,35 +110,27 @@ const Skills = () => {
       <section className="habilidades" id="habilidades">
         <h1 className="heading italic">Habilidades</h1>
         <div className="habilidades__grid">
-          <Fade duration={1000} distance="30px" delay={200} left>
-            <h2 className="heading italic">Tecnicas</h2>
-          </Fade>
+          <h2 className="heading italic">Tecnicas</h2>
           <div className="habilidades__tecnicas">
             {skills.map((skill) => {
               const { id, title, icon } = skill;
               return (
-                <Fade duration={1000} distance="30px" delay={200} left key={id}>
-                  <div className="habilidades__contenido">
-                    {icon}
-                    <p>{title}</p>
-                  </div>
-                </Fade>
+                <div className="habilidades__contenido">
+                  {icon}
+                  <p>{title}</p>
+                </div>
               );
             })}
           </div>
-          <Fade duration={1000} distance="30px" delay={200} left>
-            <h2 className="heading italic">Blandas</h2>
-          </Fade>
+          <h2 className="heading italic">Blandas</h2>
           <div className="habilidades__blandas">
             {softSkills.map((skill) => {
               const { id, title } = skill;
               return (
-                <Fade duration={1000} distance="30px" delay={200} left>
-                  <div key={id}>
-                    <AiOutlineCheck className="fscheck" />
-                    <p className="blandas__texto">{title}</p>
-                  </div>
-                </Fade>
+                <div key={id}>
+                  <AiOutlineCheck className="fscheck" />
+                  <p className="blandas__texto">{title}</p>
+                </div>
               );
             })}
           </div>

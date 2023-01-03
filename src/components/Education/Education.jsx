@@ -1,11 +1,11 @@
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 
 const Education = () => {
   return (
     <section className="educacion" id="educacion">
       <h1 className="heading">Educación</h1>
       <div className="timeline-items">
-        <Fade duration={1500} distance="150px" delay={400} left>
+        {/* <Fade duration={1500} distance="150px" delay={400} left> */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">Ago|2022 - Presente</p>
@@ -22,8 +22,8 @@ const Education = () => {
               </p>
             </div>
           </div>
-        </Fade>
-        <Fade duration={1500} distance="150px" delay={400} left>
+        {/* </Fade>
+        <Fade duration={1500} distance="150px" delay={400} left> */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">
@@ -41,8 +41,8 @@ const Education = () => {
               </p>
             </div>
           </div>
-        </Fade>
-        <Fade duration={1500} distance="150px" delay={400} left>
+        {/* </Fade>
+        <Fade duration={1500} distance="150px" delay={400} left> */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">2021-2022</p>
@@ -54,8 +54,8 @@ const Education = () => {
               </p>
             </div>
           </div>
-        </Fade>
-        <Fade duration={1500} distance="150px" delay={400} left>
+        {/* </Fade>
+        <Fade duration={1500} distance="150px" delay={400} left> */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">2016-2021</p>
@@ -73,7 +73,7 @@ const Education = () => {
               </p>
             </div>
           </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
     </section>
   );
