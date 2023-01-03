@@ -14,8 +14,9 @@ const Projectos = () => {
 
       <Fade duration={2000} distance="200px" delay={500} left>
         <div className="proyecto__card">
-          <a href="https://citasreact-vite.netlify.app/">
-            <img src={PIUGRS} alt="piugrs img" />
+          <a href="#proyectos" className="proyecto__progress">
+            <img src={PIUGRS} alt="piugrs img" className="blur" />
+            <p className="proyecto__progress-text">In Progress..</p>
           </a>
           <div>
             <div className="proyecto__description">

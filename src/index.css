@@ -416,6 +416,25 @@ header, section, main, footer{
   }
 }
 
+.blur{
+  filter: blur(6px);
+  height: 35rem;
+}
+
+.proyecto__progress{
+  position: relative;
+}
+
+.proyecto__progress-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #BABABA;
+}
+
 /** ---------------------------- HABILIDADES ------------------------- */
 
 .habilidades{
