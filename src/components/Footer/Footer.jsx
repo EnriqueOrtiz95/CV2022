@@ -1,5 +1,5 @@
 import WaveFooter from "../..//img/wave-footer.svg";
-import { FaPaperPlane, FaPhoneSquareAlt } from "react-icons/fa";
+import EnriqueOrtizCV from "../../EnriqueOrtiz_FS.pdf";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
                 <AiFillLinkedin className="icons" />
               </a>
             </div>
-            <a href="EnriqueOrtiz-CV.pdf" download className="btn btn2">
+            <a href={EnriqueOrtizCV} download className="btn btn2">
               Descargar CV
             </a>
           </div>

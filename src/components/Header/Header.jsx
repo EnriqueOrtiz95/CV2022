@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import EnriqueOrtizCV from "../../EnriqueOrtiz-CV.pdf";
+import EnriqueOrtizCV from "../../EnriqueOrtiz_FS.pdf";
 import Developer from "../../img/developer.png";
 import Logo from "../../img/dev_logo.png";
 import LogoBlack from "../../img/dev_logo_black.png";
