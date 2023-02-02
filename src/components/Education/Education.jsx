@@ -35,7 +35,7 @@ const Education = () => {
                 conocimiento como desarrollador y ofrecer los mejores servicios
                 al mercado, actualmente estoy aprendiendo{" "}
                 <span className="text-green">
-                  React Hooks, Redux Toolkit, Java, NodeJS, Express
+                  NextJS, Typescript, MongoDB, AWS Microservices & Docker
                 </span>
                 .
               </p>
