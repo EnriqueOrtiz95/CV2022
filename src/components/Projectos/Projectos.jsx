@@ -4,17 +4,15 @@ import Mapty from "../../img/mapty.png";
 import Bankist from "../../img/bankistApp.png";
 import Citas from "../../img/citas-react.png";
 import PIUGRS from "../../img/piugrs.png";
-
-// import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Projectos = () => {
   return (
     <main className="proyectos" id="proyectos">
       <h1 className="heading">Proyectos</h1>
-
-      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
+      <Fade duration={2000} distance="200px" delay={500} left>
         <div className="proyecto__card">
-          <a href="#proyectos" className="proyecto__progress">
+          <a href="https://piugrs.vercel.app/" className="proyecto__progress">
             <img src={PIUGRS} alt="piugrs img" className="blur" />
             <p className="proyecto__progress-text">In Progress..</p>
           </a>
@@ -25,27 +23,33 @@ const Projectos = () => {
                 listado de los mejores
                 <span className="text-indigo"> Scores</span> de los jugadores de
                 Pump It Up, esto en base a imagenes que se suben a la plataforma
-                y se utilizan las herramientas mas sofiisticadas de
+                y se utilizan las herramientas mas sofisticadas de
                 reconocimiento de imagenes para obtener los mejores resultados.
               </p>
-              <p className="proyecto__madein">
-                Realizada en: <br />
-                <br />{" "}
-                <span className="bold">
-                  Frontend - React <br /> Database - MySQL <br /> Cloud - AWS
-                  Cognito/RDS/S3 <br /> Backend - Python/SQLAlchemy/Chalice/Tesseract
-                </span>
-              </p>
+              <div className="proyecto__madein">
+                <h3 className="text-center text-coffee">En Desarrollo en:</h3>
+                <p className="mt-2">
+                  <span className="text-pink">Frontend</span> - React/NextJS
+                </p>
+                <p className="mt-2">
+                  <span className="text-pink">Database </span> - MySQL
+                </p>
+                <p className="mt-2">
+                  <span className="text-pink">Cloud</span> - AWS
+                  Cognito/RDS/S3/SES/API Gateway/Cloudfront
+                </p>
+                <p className="mt-2">
+                  <span className="text-pink">Backend</span> -
+                  Python/SQLAlchemy/Chalice/Tesseract
+                </p>
+              </div>
             </div>
             <div className="proyecto__links">
-              <a
-                href="https://citasreact-vite.netlify.app/"
-                className="proyecto__link"
-              >
+              <a href="https://piugrs.vercel.app/" className="proyecto__link">
                 Demo
               </a>
               <a
-                href="https://github.com/EnriqueOrtiz95/PIU-GRS"
+                href="https://github.com/EnriqueOrtiz95/PIUGRS"
                 className="proyecto__link"
               >
                 Github <AiFillGithub />
@@ -53,9 +57,9 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      {/* </Fade> */}
+      </Fade>
 
-      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
+      <Fade duration={2000} distance="200px" delay={500} left>
         <div className="proyecto__card">
           <a href="https://citasreact-vite.netlify.app/">
             <img src={Citas} alt="citas-react img" />
@@ -88,8 +92,8 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      {/* </Fade> */}
-      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
+      </Fade>
+      <Fade duration={2000} distance="200px" delay={500} left>
         <div className="proyecto__card">
           <a href="https://pixabayapigenerator.netlify.app/">
             <img src={Pixabay} alt="pixabay app img" />
@@ -120,8 +124,8 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      {/* </Fade> */}
-      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
+      </Fade>
+      <Fade duration={2000} distance="200px" delay={500} left>
         <div className="proyecto__card">
           <a href="https://maptyapi.netlify.app/">
             <img src={Mapty} alt="mapty app" />
@@ -155,8 +159,8 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      {/* </Fade> */}
-      {/* <Fade duration={2000} distance="200px" delay={500} left> */}
+      </Fade>
+      <Fade duration={2000} distance="200px" delay={500} left>
         <div className="proyecto__card">
           <a href="https://bankistappl.netlify.app/">
             <img src={Bankist} alt="bankist app img" />
@@ -189,7 +193,7 @@ const Projectos = () => {
             </div>
           </div>
         </div>
-      {/* </Fade> */}
+      </Fade>
     </main>
   );
 };

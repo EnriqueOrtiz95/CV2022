@@ -6,7 +6,7 @@ import LogoBlack from "../../img/dev_logo_black.png";
 import { FaBars } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import links from "./data_header";
-// import {Fade } from "react-reveal";
+import {Fade } from "react-awesome-reveal";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +66,7 @@ const Header = () => {
               Hola, soy <b>Enrique Ortiz</b> <br />{" "}
               <span>Full-Stack Developer</span>
             </p>
-            {/* <Fade delay={400} duration={2500} distance="150px" bottom> */}
+            <Fade delay={400} duration={2500} distance="150px" bottom>
               <a
                 href={EnriqueOrtizCV}
                 download
@@ -74,13 +74,13 @@ const Header = () => {
               >
                 Descargar CV
               </a>
-            {/* </Fade> */}
+            </Fade>
           </div>
 
           <div className="header__img">
-            {/* <Fade delay={400} duration={2500} distance="250px" right> */}
+            <Fade delay={400} duration={2500} distance="250px" right>
               <img src={Developer} alt="developer" />
-            {/* </Fade> */}
+            </Fade>
           </div>
         </div>
       </div>

@@ -55,7 +55,9 @@ const Footer = () => {
         </div>
         <hr />
         <p className="copyright">
-          &copy; <span>Todos los derechos reservados 2022</span> | Enrique Ortiz{" "}
+          &copy;{" "}
+          <span>Todos los derechos reservados {new Date().getFullYear()}</span>{" "}
+          | Enrique Ortiz{" "}
         </p>
       </footer>
     </>

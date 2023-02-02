@@ -1,11 +1,11 @@
-// import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Education = () => {
   return (
     <section className="educacion" id="educacion">
       <h1 className="heading">Educación</h1>
-      <div className="timeline-items">
-        {/* <Fade duration={1500} distance="150px" delay={400} left> */}
+      <Fade duration={1500} distance="150px" delay={400} cascade>
+        <div className="timeline-items">
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">Ago|2022 - Presente</p>
@@ -22,8 +22,6 @@ const Education = () => {
               </p>
             </div>
           </div>
-        {/* </Fade>
-        <Fade duration={1500} distance="150px" delay={400} left> */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">
@@ -36,26 +34,24 @@ const Education = () => {
                 Aprendiendo Día a Día Tecnologías que me permiten ampliar mi
                 conocimiento como desarrollador y ofrecer los mejores servicios
                 al mercado, actualmente estoy aprendiendo{" "}
-                <span className="text-green">React Hooks, Redux Toolkit, Java, NodeJS, Express</span>
+                <span className="text-green">
+                  React Hooks, Redux Toolkit, Java, NodeJS, Express
+                </span>
                 .
               </p>
             </div>
           </div>
-        {/* </Fade>
-        <Fade duration={1500} distance="150px" delay={400} left> */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">2021-2022</p>
             <div className="timeline-content">
               <h3>Udemy Courses</h3>
               <p>
-                Aprendí y Reforcé Tecnologías tales como CSS, JS, Bootstrap,
-                SQL con MySQL y Manejo de ORMs{" "}
+                Aprendí y Reforcé Tecnologías tales como CSS, JS, Bootstrap, SQL
+                con MySQL y Manejo de ORMs{" "}
               </p>
             </div>
           </div>
-        {/* </Fade>
-        <Fade duration={1500} distance="150px" delay={400} left> */}
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <p className="timeline-date">2016-2021</p>
@@ -73,8 +69,8 @@ const Education = () => {
               </p>
             </div>
           </div>
-        {/* </Fade> */}
-      </div>
+        </div>
+      </Fade>
     </section>
   );
 };

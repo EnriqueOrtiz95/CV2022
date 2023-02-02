@@ -87,6 +87,18 @@ header, section, main, footer{
   color: white !important;
 }
 
+.text-center{
+  text-align: center;
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+
+.mt-2{
+  margin-top: 2rem;
+}
+
 .nav.bgBlack{
   background-color: var(--color-black);
 }
@@ -405,6 +417,12 @@ header, section, main, footer{
 }
 .proyecto__description p{
   font-size: 1.8rem;
+}
+
+.proyecto__madein{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
 }
 
 /*? ----------------------- PROYECTOS MQ -------------------- */

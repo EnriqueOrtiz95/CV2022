@@ -2,7 +2,7 @@ import WaveRev from "../../img/wave-pink_rev.svg";
 import Wave from "../../img/wave-pink.svg";
 import { AiOutlineCheck } from "react-icons/ai";
 import { softSkills } from "./data_skills";
-// import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import {
   FaHeadSideCough,
@@ -110,26 +110,41 @@ const Skills = () => {
       <section className="habilidades" id="habilidades">
         <h1 className="heading italic">Habilidades</h1>
         <div className="habilidades__grid">
-          <h2 className="heading italic">Tecnicas</h2>
+          <Fade duration={1000} distance="30px" delay={200} left triggerOnce={true}>
+            <h2 className="heading italic">Tecnicas</h2>
+          </Fade>
           <div className="habilidades__tecnicas">
             {skills.map((skill) => {
               const { id, title, icon } = skill;
               return (
-                <div className="habilidades__contenido">
-                  {icon}
-                  <p>{title}</p>
+                <div className="habilidades__contenido" key={id}>
+                  <Fade
+                    duration={400}
+                    distance="30px"
+                    delay={100}
+                    top
+                    cascade
+                    triggerOnce={true}
+                  >
+                    {icon}
+                    <p>{title}</p>
+                  </Fade>
                 </div>
               );
             })}
           </div>
-          <h2 className="heading italic">Blandas</h2>
+          <Fade duration={1000} distance="30px" delay={200} left triggerOnce={true}>
+            <h2 className="heading italic">Blandas</h2>
+          </Fade>
           <div className="habilidades__blandas">
             {softSkills.map((skill) => {
               const { id, title } = skill;
               return (
                 <div key={id}>
-                  <AiOutlineCheck className="fscheck" />
-                  <p className="blandas__texto">{title}</p>
+                  <Fade duration={1000} distance="30px" delay={200} left triggerOnce={true}>
+                    <AiOutlineCheck className="fscheck" />
+                    <p className="blandas__texto">{title}</p>
+                  </Fade>
                 </div>
               );
             })}
