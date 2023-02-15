@@ -35,12 +35,13 @@ const Projectos = () => {
                   <span className="text-pink">Database </span> - MySQL
                 </p>
                 <p className="mt-2">
-                  <span className="text-pink">Cloud</span> - AWS
-                  Cognito/RDS/S3/SES/API Gateway/Cloudfront
+                  <span className="text-pink">Cloud</span> <br/>AWS
+                  Cognito/RDS/S3/SES <br/>API Gateway/Cloudfront
                 </p>
+
                 <p className="mt-2">
-                  <span className="text-pink">Backend</span> -
-                  Python/SQLAlchemy/Chalice/Tesseract
+                  <span className="text-pink">Backend</span> <br/>
+                  Python/SQLAlchemy <br/> Chalice/Tesseract
                 </p>
               </div>
             </div>
