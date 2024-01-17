@@ -5,11 +5,18 @@ import Logo from "../../img/dev_logo.png";
 import LogoBlack from "../../img/dev_logo_black.png";
 import { FaBars } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import links from "./data_header";
-import {Fade } from "react-awesome-reveal";
+import { links, linksEN } from "./data_header";
+import { Fade } from "react-awesome-reveal";
+
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
+
+import { SpanishLen } from "../../utils/helpers";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const { language, setLanguage } = useContext(LanguageContext);
 
   useEffect(() => {
     const hideMenu = () => {
@@ -25,6 +32,11 @@ const Header = () => {
     };
   }, [isOpen]);
 
+  const toggleLanguage = () => {
+    const newLanguage = language === "es" ? "us" : "es";
+    setLanguage(newLanguage);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -35,14 +47,23 @@ const Header = () => {
             </a>
           </div>
           <div className={`${isOpen ? "nav__right active" : "nav__right "}`}>
-            {links.map((item) => {
-              const { id, url, text } = item;
-              return (
-                <a key={id} href={url}>
-                  {text}
-                </a>
-              );
-            })}
+            {language === SpanishLen
+              ? links.map((item) => {
+                  const { id, url, text } = item;
+                  return (
+                    <a key={id} href={url}>
+                      {text}
+                    </a>
+                  );
+                })
+              : linksEN.map((item) => {
+                  const { id, url, text } = item;
+                  return (
+                    <a key={id} href={url}>
+                      {text}
+                    </a>
+                  );
+                })}
           </div>
           <div className="nav__right">
             <a href="https://github.com/EnriqueOrtiz95">
@@ -51,6 +72,15 @@ const Header = () => {
             <a href="https://www.linkedin.com/in/enriqueortizlo/">
               <AiFillLinkedin className="icons" />
             </a>
+            <div className="nav__right-flags">
+              <img
+                src={`https://flagsapi.com/${language.toUpperCase()}/flat/64.png`}
+                alt={`Flag for ${language.toUpperCase()}`}
+                width={30}
+                onClick={toggleLanguage}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
           </div>
           <FaBars
             className={`${
@@ -63,16 +93,12 @@ const Header = () => {
         <div className="header__description">
           <div className="header__text">
             <p>
-              Hola, soy <b>Enrique Ortiz</b> <br />{" "}
-              <span>Full-Stack Developer</span>
+              {language === SpanishLen ? "Hola, soy " : "Hello, I am "}
+              <b>Enrique Ortiz</b> <br /> <span>Full-Stack Developer</span>
             </p>
             <Fade delay={400} duration={2500} distance="150px" bottom>
-              <a
-                href={EnriqueOrtizCV}
-                download
-                className="btn btn2"
-              >
-                Descargar CV
+              <a href={EnriqueOrtizCV} download className="btn btn2">
+                {language === SpanishLen ? "Descargar CV" : "Download CV"}
               </a>
             </Fade>
           </div>

@@ -153,12 +153,12 @@ header, section, main, footer{
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 2rem 3rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .nav__logo{
@@ -169,17 +169,25 @@ header, section, main, footer{
   font-size: 3.5rem;
 }
 
+.nav__right{
+  display: flex;
+  gap: 1rem;
+}
+
 .nav__right:last-of-type a{
   font-size: 2.5rem;
 }
 
 .nav__right a{
-  margin-inline: 1rem;
   position: relative;
 }
 .nav__right a:hover{
   text-decoration: underline;
   color:var(--color-pink);
+}
+
+.nav__right-flags{
+  width: 50px;
 }
 
 
@@ -209,6 +217,8 @@ header, section, main, footer{
 .fa-bars{
   display: none;
 }
+
+
 
 /*? ----------------------- HEADER MQ ---------------------- */
 @media screen and (max-width: 991px){
